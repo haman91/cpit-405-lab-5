@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#search {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 200px;
+    margin-right: 10px;
+}
+
+#team-filter {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 150px;
+}
+
+.table-filters {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    cursor: pointer;
+}
+
+.dark-mode {
+    background-color: #333;
+    color: #f4f4f4;
+}
+
+.dark-mode table {
+    border-color: #555;
+}
+
+.dark-mode th,
+.dark-mode td {
+    border-color: #555;
+}
+/* Highlight a player row when the mouse moves over it */
+.highlight-row {
+    background-color: #e0e0e0;
+    color: #111;
+}
+
+/* Dark mode for the whole page */
+body.dark-mode {
+    background-color: #333;
+    color: #f4f4f4;
+}
+
+/* Dark mode table */
+body.dark-mode table {
+    background-color: #444;
+    color: #f4f4f4;
+}
+
+/* Dark mode table headings */
+body.dark-mode th {
+    background-color: #222;
+    color: white;
+}
+
+/* Dark mode table borders */
+body.dark-mode th,
+body.dark-mode td {
+    border-color: #555;
+}
+
+/* Highlight rows in dark mode */
+body.dark-mode .highlight-row {
+    background-color: #555;
+    color: white;
+}
+
+/* Make sortable headings look clickable */
+th[data-sort] {
+    cursor: pointer;
+}
+
+/* Improve the table on smaller screens */
+.container {
+    overflow-x: auto;
+}
+
+table {
+    min-width: 650px;
+}
